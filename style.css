@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, rgb(147, 235, 255) , rgb(45, 45, 98));
+}
+.main{
+    position: relative;
+}
+.buttons{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginButton, .signUpButton{
+    padding: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: x-large;
+}
+.loginButton:hover{
+    background-image: linear-gradient(to left, rgb(232, 206, 75) , rgb(163, 26, 49));
+}
+.signUpButton:hover{
+    background-image: linear-gradient(to right, rgb(232, 206, 75) , rgb(163, 26, 49));
+}
+.submitButton{
+    background-color: rgb(104, 162, 248);
+    padding: 10px 20px;
+    font-size: large;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.overLay{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.6;
+}
+.LoginModal p{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.SignUpModal p{
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.LoginModal{
+    font-size: x-large;
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 30%;
+    background-image: linear-gradient(to right, rgb(200, 245, 155) , rgb(6, 79, 92));
+    border: 1px solid black;
+}
+.SignUpModal{
+    font-size: x-large;
+    width: 50%;
+    height: 60%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 25%;
+    background-image: linear-gradient(to right, rgb(200, 245, 155) , rgb(6, 79, 92));
+    border: 1px solid black;
+
+}
+.close, .Sclose{
+    font-size: large;
+    width: 40px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    
+}
+.close:hover{
+    background-color: red;
+}
+.Sclose:hover{
+    background-color: red;
+}
+.fname, .uname, .pass, .cpass, .email{
+    display: flex;
+
+    justify-content: space-between;
+    width: 60%;
+    
+}
+.hidden{
+    display: none;
+}
